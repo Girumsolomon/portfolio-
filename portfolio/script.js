@@ -1,9 +1,9 @@
-// Example: Adding a simple scroll effect
-document.querySelectorAll('a[href^="https://mail.google.com/mail/u/1/inbox"]').forEach(anchor => {
+
+document.querySelectorAll(conact).forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
+        document.querySelector(this.getAttribute('https://mail.google.com/mail/')).scrollIntoView({
             behavior: 'smooth'
         });
     });
