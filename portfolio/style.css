@@ -130,28 +130,31 @@ u{
     border-radius: 50%;
     height: 400px;
     width: 400px;
+    padding: ;
+   border: 10px solid black;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
-    box-shadow: 0 0 25px #eeff00;
+    box-shadow: 0 0 25px black;
     transition: 0.3s ease-in-out;
 
 }
 #home img:hover{
-    box-shadow: 0 0 25px #eeff00,
-                0 0 50px #eeff00,
-                0 0 100px #eeff00;
+    box-shadow: 0 0 25px black,
+                0 0 50px black,
+                0 0 100px black;
 }
 #about img{
     border-radius: 50%;
     height: 400px;
     width: 400px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+    background: linear-gradient(to bottom, rgba(0, 255, 255, 0.5), rgba(0, 255, 255, 0.10));
     box-shadow: 0 0 25px cyan;
     transition: 0.3s ease-in-out;
 }
 #about img:hover{
     box-shadow: 0 0 25px cyan,
                 0 0 50px cyan,
-                0 0 100px cyan;
+                0 0 100px cyan
+                ;
 }
 .intro h1 {
     font-size: 36px;
@@ -294,27 +297,47 @@ h1, h2 {
   .skill-info span{
     color: cyan;
     font-weight: bold;
+    height: 2px;
+  }
+  .progress-bar{
+    background-color: #383321;
+    border-radius: 500px;
+    border-top: 
+    overflow: hidden;
   }
 
-.progress-bar{
-   
-    background: #333;
-    border-radius: 10px;
+.progress-bar div {
+    height: 100%;
+     background: cyan;
+   box-shadow: 0 100px 100px white,0 -100px 100px white;
+   display: inline-flexbox;
+   background: orange;
+  line-height: 20px;
+opacity: ;
+background-position: content;
+    border-radius: 50px;
     overflow: hidden;
     position: relative;
-    margin-bottom: rem;
+    margin-bottom: 0.5rem;
+    transition: width 1.5s ease;
 }
-.progres{
+.progres div{
     position: absolute;
     top: 0;
     left: 0;
-    
-    background-color: orange;
+    background-color:cyan;
+    display: inline-block;
+    line-height: 20px;
+    height: 20px;
     border-radius: 10px;
     width: 0;
-    transition: width 1.5s ease;
+    transition:  1.5s ease;
 }
-  
+.html-css { width: 95%; }
+.javascript { width: 90%; }
+.react { width: 85%; }
+.nodejs { width: 80%; }
+
   #about p {
     max-width: 600px;
     text-align: center;
@@ -336,6 +359,38 @@ h1, h2 {
     
 
   }
+  .social-icon button{
+    display: inline-flex;
+    justify-self: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: orange;
+    border:2px solid cyan;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: orange;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 25px orange;
+
+
+  }
+  .social-icon button a{
+    align-items: center;
+    color:orange;
+    padding-left: 22px;
+    justify-content: center;
+    font-size: cover;
+  }
+  .social-icon button:hover{
+    color: orange;
+    transform: scale(1.3)translateY(-5px);
+    box-shadow: 0 0 25px orange;
+    background-color: orange;
+    box-shadow: 0 0 50px orange;
+  }
+  
 form {
     display: flex;
     padding-left: 20%;
